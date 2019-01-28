@@ -1,3 +1,15 @@
+
+*******************
+** Below codes convert string country names to COW/CCODE country codes, 
+* which is commonly used by International Relations and Conflict scholars. The code are built on Andreas Beger's do.file, 
+* which is available on https://www.andybeger.com/2013/09/05/stata-do-files-for-country-code-conversions/. However, as I worked with different 
+* datasets, especially economics datasets, I found that the list does not cover all possible names of countries. I, therefore, have been updating
+* Andreas Beger's do.file and will continue updating this do.file here.
+***********************************
+
+
+
+
 rename country sname
 gen scode=.
 
