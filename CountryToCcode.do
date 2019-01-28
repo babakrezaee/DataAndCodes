@@ -64,6 +64,9 @@ replace scode=130 if sname=="Ecuador";
 replace scode=135 if sname=="Peru";
 replace scode=140 if sname=="Brazil";
 replace scode=145 if sname=="Bolivia";
+**Babak added
+replace scode=145 if sname=="Bolivia (Plurinational State of)";
+
 replace scode=150 if sname=="Paraguay";
 replace scode=155 if sname=="Chile";
 replace scode=160 if sname=="Argentina";
@@ -338,6 +341,9 @@ replace scode=817 if sname=="Vietnam, Republic of";
 replace scode=820 if sname=="Malaysia";
 replace scode=830 if sname=="Singapore";
 replace scode=835 if sname=="Brunei";
+**Babak added
+replace scode=835 if sname=="Brunei Darussalam";
+
 replace scode=840 if sname=="Philippines";
 replace scode=850 if sname=="Indonesia";
 replace scode=860 if sname=="East Timor";
