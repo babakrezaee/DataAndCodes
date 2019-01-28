@@ -132,8 +132,7 @@ replace scode=349 if sname=="Slovenia";
 replace scode=350 if sname=="Greece";
 replace scode=352 if sname=="Cyprus";
 replace scode=355 if sname=="Bulgaria";
-replace scode=
-359 if sname=="Moldova";
+replace scode=359 if sname=="Moldova";
 **Babak added
 replace scode=359 if sname=="Republic of Moldova";
 
