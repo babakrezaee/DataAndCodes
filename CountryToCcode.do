@@ -5,10 +5,9 @@
 * which is available on https://www.andybeger.com/2013/09/05/stata-do-files-for-country-code-conversions/. However, as I worked with different 
 * datasets, especially economics datasets, I found that the list does not cover all possible names of countries. I, therefore, have been updating
 * Andreas Beger's do.file and will continue updating this do.file here.
+
+**The name of country variable should be set "country".
 ***********************************
-
-
-
 
 rename country sname
 gen scode=.
@@ -132,6 +131,7 @@ replace scode=349 if sname=="Slovenia";
 replace scode=350 if sname=="Greece";
 replace scode=352 if sname=="Cyprus";
 replace scode=355 if sname=="Bulgaria";
+
 replace scode=359 if sname=="Moldova";
 **Babak added
 replace scode=359 if sname=="Republic of Moldova";
