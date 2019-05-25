@@ -116,6 +116,7 @@ replace scode=343 if sname=="Macedonia";
 ***Babak added**
 replace scode=343 if sname=="Macedonia, F.Y.R. of";
 replace scode=343 if sname=="TFYR of Macedonia";
+replace scode=343 if sname=="Macedonia, FYR";
 
 replace scode=344 if sname=="Croatia";
 replace scode=345 if sname=="Yugoslavia";
@@ -126,7 +127,15 @@ replace scode=345 if sname=="Serbia and Montenegro";
 replace scode=345 if sname=="Serbia, Republic of";
 **Babak added
 replace scode=345 if sname=="Serbia";
+replace scode=345 if sname=="Serbia (Yugoslavia)";
+
+
+
 replace scode=346 if sname=="Bosnia and Herzegovina";
+
+**Babak
+replace scode=346 if sname=="Bosnia-Herzegovina";
+
 replace scode=349 if sname=="Slovenia";
 replace scode=350 if sname=="Greece";
 replace scode=352 if sname=="Cyprus";
@@ -137,6 +146,10 @@ replace scode=359 if sname=="Moldova";
 replace scode=359 if sname=="Republic of Moldova";
 
 replace scode=360 if sname=="Romania";
+
+**Babak added
+replace scode=360 if sname=="Rumania";
+
 replace scode=365 if sname=="Russia";
 **Babak added
 replace scode=365 if sname=="Russian Federation";
