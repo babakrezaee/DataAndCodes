@@ -278,6 +278,9 @@ replace scode=620 if sname=="Libya";
 replace scode=625 if sname=="Sudan";
 **Babak added from pwt90
 replace scode=625 if sname=="Sudan (Former)";
+
+replace scode=626 if sname=="South Sudan";
+	
 replace scode=630 if sname=="Iran";
 replace scode=630 if sname=="Iran, Islamic Republic";
 replace scode=630 if sname=="Iran, Ismalic Rep.";
