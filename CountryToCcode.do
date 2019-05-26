@@ -216,6 +216,7 @@ replace scode=482 if sname=="Cent.Afr.Rep";
 replace scode=483 if sname=="Chad";
 replace scode=484 if sname=="Congo";
 replace scode=484 if sname=="Congo, Republic of the";
+replace scode=484 if sname=="Republic of Congo";
 replace scode=484 if sname=="Congo, Republic of";
 replace scode=484 if sname=="Congo, Rep.";
 replace scode=484 if sname=="Congo, Rep";
@@ -231,6 +232,8 @@ replace scode=490 if sname=="Congo, Dem. Rep.";
 replace scode=490 if sname=="Congo-Kinshasa";
 replace scode=490 if sname=="Congo, DR";
 replace scode=490 if sname=="D.R. of the Congo";
+replace scode=490 if sname=="Democratic Republic of Congo";
+
 
 replace scode=490 if sname=="Zaire";
 *Babak added
