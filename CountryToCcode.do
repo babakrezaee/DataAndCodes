@@ -58,6 +58,7 @@ replace scode=101 if sname=="Venezuela, Rep. Bol.";
 **Babak added
 replace scode=101 if sname=="Venezuela, RB";
 replace scode=101 if sname=="Venezuela (Bolivarian Republic of)";
+replace scode=101 if sname=="Venezuela, Republica Bolivariana de";
 
 replace scode=110 if sname=="Guyana";
 replace scode=115 if sname=="Suriname";
@@ -117,6 +118,9 @@ replace scode=343 if sname=="Macedonia";
 replace scode=343 if sname=="Macedonia, F.Y.R. of";
 replace scode=343 if sname=="TFYR of Macedonia";
 replace scode=343 if sname=="Macedonia, FYR";
+replace scode=343 if sname=="North Macedonia, Republic of";
+
+
 
 replace scode=344 if sname=="Croatia";
 replace scode=345 if sname=="Yugoslavia";
@@ -161,14 +165,29 @@ replace scode=365 if sname=="Fm USSR";
 replace scode=365 if sname=="Russian Fed";
 **Babak added
 replace scode=347 if sname=="Kosovo";
+replace scode=347 if sname=="Kosovo, Republic of";
+
+
+
+
 replace scode=366 if sname=="Estonia";
 replace scode=367 if sname=="Latvia";
 replace scode=368 if sname=="Lithuania";
 replace scode=369 if sname=="Ukraine";
 replace scode=370 if sname=="Belarus";
 replace scode=371 if sname=="Armenia";
+** Babak added
+replace scode=371 if sname=="Armenia, Republic of";
+
+
 replace scode=372 if sname=="Georgia";
 replace scode=373 if sname=="Azerbaijan";
+** Babak added
+replace scode=373 if sname=="Azerbaijan, Republic of";
+
+
+
+
 replace scode=375 if sname=="Finland";
 replace scode=380 if sname=="Sweden";
 replace scode=385 if sname=="Norway";
@@ -233,6 +252,9 @@ replace scode=490 if sname=="Congo-Kinshasa";
 replace scode=490 if sname=="Congo, DR";
 replace scode=490 if sname=="D.R. of the Congo";
 replace scode=490 if sname=="Democratic Republic of Congo";
+replace scode=490 if sname=="Congo, Democratic Republic of";
+
+
 
 
 replace scode=490 if sname=="Zaire";
@@ -288,6 +310,8 @@ replace scode=630 if sname=="Iran, Ismalic Rep";
 **Babak added
 replace scode=630 if sname=="Iran, Islamic Rep.";
 replace scode=630 if sname=="Iran (Islamic Republic of)";
+replace scode=630 if sname=="Iran, Islamic Republic of";
+
 replace scode=640 if sname=="Turkey";
 replace scode=645 if sname=="Iraq";
 replace scode=651 if sname=="Egypt";
@@ -320,6 +344,12 @@ replace scode=696 if sname=="United Arab Emirates";
 replace scode=696 if sname=="Untd Arab Em";
 replace scode=698 if sname=="Oman";
 replace scode=700 if sname=="Afghanistan";
+**Babak added
+replace scode=700 if sname=="Afghanistan, Islamic Republic of";
+
+
+
+
 replace scode=701 if sname=="Turkmenistan";
 replace scode=702 if sname=="Tajikistan";
 replace scode=703 if sname=="Kyrgyzstan";
@@ -333,6 +363,8 @@ replace scode=710 if sname=="China, People's Rep";
 replace scode=710 if sname=="China, PRC";
 replace scode=710 if sname=="China,P.R.: Mainland";
 *Babak added
+replace scode=710 if sname=="China, P.R.: Mainland";
+
 replace scode=710 if sname=="China HK SAR";
 replace scode=712 if sname=="Mongolia";
 replace scode=713 if sname=="Taiwan";
@@ -385,6 +417,8 @@ replace scode=850 if sname=="Indonesia";
 replace scode=860 if sname=="East Timor";
 **Babak added
 replace scode=860 if sname=="Timor-Leste";
+replace scode=860 if sname=="Timor-Leste, Dem. Rep. of";
+
 replace scode=900 if sname=="Australia";
 replace scode=910 if sname=="Papua New Guinea";
 
@@ -398,9 +432,15 @@ replace scode=950 if sname=="Fiji";
 replace scode=955 if sname=="Tonga";
 replace scode=970 if sname=="Nauru";
 replace scode=983 if sname=="Marshall Islands";
+** Babak added
+replace scode=983 if sname=="Marshall Islands, Republic of";
+
 replace scode=986 if sname=="Palau";
 replace scode=987 if sname=="Federated States of Micronesia";
 replace scode=987 if sname=="Micronesia, Fed. Sts.";
+** Babak added
+replace scode=987 if sname=="Micronesia, Federated States of";
+
 replace scode=990 if sname=="Samoa";
 
 rename sname country
