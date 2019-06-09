@@ -110,5 +110,18 @@ foreach i of local temp_files {
 	append using `i'
 	
 	}
+
 	
-save ICEWS_aggregate.dta, replace
+
+do https://raw.githubusercontent.com/babakrezaee/DataAndCodes/master/CountryToCcode.do
+
+drop if ccode==.
+
+
+collapse (sum)  PublicStatement Appeal Intent2Cooperate Consult DiplomaticCooperation MaterialCooperatio ProvideAid Yield Invistigate Demand Disapprove Reject Threaten Protest Military ReduceRelation Coerce Assult Fight UnconMassViol, by(ccode year )
+
+
+xtset ccode year
+
+
+save "C:\Users\Babak-Lenovo2017\Dropbox\WorkingPapers\Forecasting_Contencious_Politics\DataCodes\ICEWS_aggregate.dta", replace
