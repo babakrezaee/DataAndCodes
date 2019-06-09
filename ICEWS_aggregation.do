@@ -1,4 +1,3 @@
-
 local ICEWS_Files https://www.dropbox.com/s/pgdi6hndpzvl54t/events.1995.20150313082510.tab?raw=true ///
 				  https://www.dropbox.com/s/d9co2ffcv3tlruw/events.1996.20150313082528.tab?raw=true ///
 				  https://www.dropbox.com/s/i6tv805inudtls5/events.1997.20150313082554.tab?raw=true ///
@@ -25,18 +24,81 @@ local k=1995
 
  foreach i of local ICEWS_Files {
  
-	import delimited "`i'", varnames(1)  clear 
+	import delimited "`i'", varnames(1) stringcols(7) clear 
 	
+	
+	drop if sourcesectors==""
+	drop if targetsectors==""
+	drop if country==""
+
+
+	******** The below method does not return good results; Use a dictionary and search terms and code the actors based on them
+	*gen source = reverse( sourcesectors )
+	*replace source =substr(source, 1, strpos(source, ",") - 1)
+	*replace source = reverse(source)
+	*replace source = sourcesectors if source==""
+
+	********
+
+	**** Codes based on http://eventdata.parusanalytics.com/cameo.dir/CAMEO.Manual.1.1b3.pdf
+
+	gen Camo2dCode=substr(cameocode,1,2)
+
+	collapse (count) eventid, by(country Camo2dCode )
+
+	separate Camo2dCode , by(Camo2dCode)
+
+
+	* MAKE PUBLIC STATEMENT 01
+	* APPEAL 02
+	* EXPRESS INTENT TO COOPERATE 03
+	* CONSULT 04 
+	* ENGAGE IN DIPLOMATIC COOPERATION 05
+	* ENGAGE IN MATERIAL COOPERATION 06
+	* PROVIDE AID 07
+	* YIELD 08
+	* INVESTIGATE 09
+	* DEMAND 10
+	* DISAPPROVE 11
+	* REJECT 12
+	* THREATEN 13
+	* PROTEST 14
+	* EXHIBIT MILITARY POSTURE 15
+	* REDUCE RELATIONS 16
+	* COERCE 17
+	* ASSAULT 18
+	* FIGHT 19
+	* ENGAGE IN UNCONVENTIONAL MASS VIOLENCE 20
+
+	local CamoEvent PublicStatement Appeal Intent2Cooperate Consult DiplomaticCooperation ///
+					MaterialCooperatio ProvideAid Yield Invistigate Demand Disapprove ///
+					Reject Threaten Protest Military ReduceRelation Coerce Assult Fight UnconMassViol
+
+	local i=1
+
+	 foreach j of local CamoEvent {
+	 
+		rename Camo2dCode`i' `j'
+		destring `j', replace ignore(" ")
+		replace `j'=eventid if `j'!=.
+		replace `j'=0 if `j'==.
+		
+		local i=`i'+1
+	 }
+
+	drop eventid Camo2dCode
+	
+	gen year=`k'
+
 	tempfile ICEWS_`k'
 	save `ICEWS_`k'', replace
 	dis "ICEWS_`k' is saved, wait for the next file"
 	
 	local k=`k'+1
-
  
 }
 
-use `ICEWS_1995', clear
+use `ICEWS_1995.dta', clear
 
 local temp_files `ICEWS_1996' `ICEWS_1997' `ICEWS_1998' `ICEWS_1999' `ICEWS_2000' ///
 				 `ICEWS_2001' `ICEWS_2002' `ICEWS_2003' `ICEWS_2004' `ICEWS_2005' ///
@@ -44,8 +106,9 @@ local temp_files `ICEWS_1996' `ICEWS_1997' `ICEWS_1998' `ICEWS_1999' `ICEWS_2000
 				 `ICEWS_2011' `ICEWS_2012' `ICEWS_2013' `ICEWS_2014' 
 
 foreach i of local temp_files {
+	
 	append using `i'
 	
 	}
 	
-save ICEWS_aggregate.dta, replace			
+save ICEWS_aggregate.dta, replace
