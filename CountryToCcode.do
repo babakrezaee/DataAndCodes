@@ -3,9 +3,16 @@
 ** Below codes convert string country names to COW/CCODE country codes, 
 * which is commonly used by International Relations and Conflict scholars. The code are built on Andreas Beger's do.file, 
 * which is available on https://www.andybeger.com/2013/09/05/stata-do-files-for-country-code-conversions/. However, as I worked with different 
-* datasets, especially economics datasets, I found that the list does not cover all possible names of countries. I, therefore, have been updating
-* Andreas Beger's do.file and will continue updating this do.file here.
+* datasets, especially datasets are used commonly by economists such as IMF and World Bank, I found that the list does not cover all possible names of countries.
+*I, therefore, have been updating Andreas Beger's do.file and will continue updating this do.file here.
+*This github page will include the most updated version of the STATA do file. You just need to make sure that the name of country variable is
+* named as "country". Then, just run below command line in STATA (within ***...*** ):
 
+*** do https://raw.githubusercontent.com/babakrezaee/DataAndCodes/master/CountryToCcode.do ***
+
+
+
+*************************
 **The name of country variable should be set "country".
 ***********************************
 
@@ -133,6 +140,8 @@ replace scode=345 if sname=="Serbia, Republic of";
 replace scode=345 if sname=="Serbia";
 replace scode=345 if sname=="Serbia (Yugoslavia)";
 
+replace scode=341 if sname=="Montenegro";
+
 
 
 replace scode=346 if sname=="Bosnia and Herzegovina";
@@ -148,6 +157,9 @@ replace scode=355 if sname=="Bulgaria";
 replace scode=359 if sname=="Moldova";
 **Babak added
 replace scode=359 if sname=="Republic of Moldova";
+replace scode=359 if sname=="Moldova, Republic of";
+
+
 
 replace scode=360 if sname=="Romania";
 
@@ -322,6 +334,8 @@ replace scode=652 if sname=="Syrian Arab Republic";
 replace scode=660 if sname=="Lebanon";
 replace scode=663 if sname=="Jordan";
 replace scode=666 if sname=="Israel";
+replace scode=666 if sname=="Occupied Palestinian Territory";
+
 replace scode=670 if sname=="Saudi Arabia";
 **Babak (I code Yemen 678 for all years as Gleditsch did in his coding of GDP, trade, ect  )
 replace scode=678 if sname=="Yemen Arab Republic";
