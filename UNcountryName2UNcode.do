@@ -1,8 +1,6 @@
 ** Country name to UNcode
 * receives country name based on UN country code, and returns UN country code.
-gen UNcode=.
-
-replace UNcode=.
+gen UNcode=""
 
 replace UNcode="AFG"  if country=="Afghanistan"
 replace UNcode="ALA"	if country=="Aland Islands"
