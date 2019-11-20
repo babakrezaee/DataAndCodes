@@ -38,6 +38,8 @@ replace scode= 52 if sname=="Trinidad & Tobago";
 replace scode= 52 if sname=="Trinidad &Tobago";
 **Babak added
 replace scode= 52 if sname=="Trinidad Tbg";
+replace scode= 52 if sname=="Trinidad-Tobago";
+
 replace scode= 53 if sname=="Barbados";
 replace scode= 54 if sname=="Dominica";
 replace scode= 55 if sname=="Grenada";
@@ -102,6 +104,8 @@ replace scode=232 if sname=="Andorra";
 replace scode=235 if sname=="Portugal";
 replace scode=260 if sname=="Germany";
 replace scode=260 if sname=="German Federal Republic";
+replace scode=260 if sname=="FRG/Germany";
+
 **Babak added
 replace scode=260 if sname=="Fm German FR";
 replace scode=265 if sname=="German Democratic Republic";
@@ -114,6 +118,8 @@ replace scode=315 if sname=="Czechoslovakia";
 **Babak added
 replace scode=315 if sname=="Czechoslovak";
 replace scode=316 if sname=="Czech Republic";
+replace scode=316 if sname=="Czech Rep.";
+
 replace scode=317 if sname=="Slovakia";
 replace scode=317 if sname=="Slovak Republic";
 replace scode=325 if sname=="Italy";
@@ -217,6 +223,7 @@ replace scode=404 if sname=="GuineaBissau";
 replace scode=411 if sname=="Equatorial Guinea";
 **Babak added
 replace scode=411 if sname=="Eq.Guinea";
+replace scode=411 if sname=="Eq. Guinea";
 replace scode=420 if sname=="Gambia";
 replace scode=420 if sname=="Gambia, The";
 replace scode=432 if sname=="Mali";
@@ -244,6 +251,8 @@ replace scode=482 if sname=="Central African Rep.";
 replace scode=482 if sname=="Central African Rep";
 *Babak added
 replace scode=482 if sname=="Cent.Afr.Rep";
+replace scode=482 if sname=="Cent. Af. Rep.";
+
 replace scode=483 if sname=="Chad";
 replace scode=484 if sname=="Congo";
 replace scode=484 if sname=="Congo, Republic of the";
@@ -265,6 +274,8 @@ replace scode=490 if sname=="Congo, DR";
 replace scode=490 if sname=="D.R. of the Congo";
 replace scode=490 if sname=="Democratic Republic of Congo";
 replace scode=490 if sname=="Congo, Democratic Republic of";
+replace scode=490 if sname=="Congo (DRC)";
+
 
 
 
@@ -293,6 +304,9 @@ replace scode=552 if sname=="Zimbabwe";
 replace scode=552 if sname=="Zimbabwe (Rhodesia)";
 replace scode=553 if sname=="Malawi";
 replace scode=560 if sname=="South Africa";
+
+replace scode=560 if sname=="S. Africa";
+
 replace scode=565 if sname=="Namibia";
 replace scode=570 if sname=="Lesotho";
 replace scode=571 if sname=="Botswana";
@@ -343,8 +357,10 @@ replace scode=678 if sname=="Yemen";
 replace scode=678 if sname=="Yemen, Rep.";
 replace scode=678 if sname=="Yemen, Republic of";
 replace scode=678 if sname=="Yemen People's Republic";
+replace scode=678 if sname=="Yemen (PDR)";
 **Babak added
 replace scode=678 if sname=="Fm Yemen AR";
+replace scode=678 if sname=="Yemen (AR)";
 
 **Babak added
 replace scode=678 if sname=="Fm Yemen Dm";
@@ -356,6 +372,8 @@ replace scode=694 if sname=="Qatar";
 replace scode=696 if sname=="United Arab Emirates";
 **Babak added
 replace scode=696 if sname=="Untd Arab Em";
+replace scode=696 if sname=="UAE";
+
 replace scode=698 if sname=="Oman";
 replace scode=700 if sname=="Afghanistan";
 **Babak added
@@ -435,6 +453,7 @@ replace scode=860 if sname=="Timor-Leste, Dem. Rep. of";
 
 replace scode=900 if sname=="Australia";
 replace scode=910 if sname=="Papua New Guinea";
+replace scode=910 if sname=="P. N. Guinea";
 
 
 replace scode=920 if sname=="New Zealand";
