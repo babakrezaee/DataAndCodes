@@ -30,6 +30,8 @@ replace scode= 31 if sname=="Bahamas, The";
 replace scode= 40 if sname=="Cuba";
 replace scode= 41 if sname=="Haiti";
 replace scode= 42 if sname=="Dominican Republic";
+replace scode= 42 if sname=="Dom. Rep.";
+
 **Babak added
 replace scode= 42 if sname=="Dominican Rp";
 replace scode= 51 if sname=="Jamaica";
