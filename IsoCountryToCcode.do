@@ -7,7 +7,7 @@
 *This github page will include the most updated version of the STATA do file. You just need to make sure that the name of country variable is
 * named as "country". Then, just run below command line in STATA (within ***...*** ):
 
-*** do https://raw.githubusercontent.com/babakrezaee/DataAndCodes/master/CountryToCcode.do ***
+*** do https://raw.githubusercontent.com/babakrezaee/DataAndCodes/master/IsoCountryToCcode.do ***
 
 
 
