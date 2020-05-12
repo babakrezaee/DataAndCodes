@@ -94,6 +94,9 @@ replace scode=355 if siso=="BGR";
 replace scode=359 if siso=="MDA";
 replace scode=360 if siso=="ROU";
 replace scode=365 if siso=="RUS";
+**Babak added
+replace scode=365 if siso=="USR";
+
 replace scode=366 if siso=="EST";
 replace scode=367 if siso=="LVA";
 replace scode=368 if siso=="LTU";
