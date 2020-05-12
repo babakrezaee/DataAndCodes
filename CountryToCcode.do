@@ -156,6 +156,9 @@ replace scode=346 if sname=="Bosnia and Herzegovina";
 
 **Babak
 replace scode=346 if sname=="Bosnia-Herzegovina";
+replace scode=346 if sname=="Bosnia & Herzegovina";
+
+
 
 replace scode=349 if sname=="Slovenia";
 replace scode=350 if sname=="Greece";
