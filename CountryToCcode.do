@@ -320,6 +320,9 @@ replace scode=565 if sname=="Namibia";
 replace scode=570 if sname=="Lesotho";
 replace scode=571 if sname=="Botswana";
 replace scode=572 if sname=="Swaziland";
+**Babak added
+replace scode=572 if sname=="Eswatini";
+
 replace scode=580 if sname=="Madagascar";
 **Babak added
 replace scode=580 if sname=="Madagascar (Malagasy)";
