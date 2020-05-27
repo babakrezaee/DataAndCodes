@@ -121,6 +121,9 @@ replace scode=315 if sname=="Czechoslovakia";
 replace scode=315 if sname=="Czechoslovak";
 replace scode=316 if sname=="Czech Republic";
 replace scode=316 if sname=="Czech Rep.";
+replace scode=316 if sname=="Czechia";
+
+
 
 replace scode=317 if sname=="Slovakia";
 replace scode=317 if sname=="Slovak Republic";
@@ -169,7 +172,7 @@ replace scode=359 if sname=="Moldova";
 **Babak added
 replace scode=359 if sname=="Republic of Moldova";
 replace scode=359 if sname=="Moldova, Republic of";
-
+replace scode=359 if sname=="Moldova (Republic of)";
 
 
 replace scode=360 if sname=="Romania";
@@ -285,6 +288,9 @@ replace scode=490 if sname=="D.R. of the Congo";
 replace scode=490 if sname=="Democratic Republic of Congo";
 replace scode=490 if sname=="Congo, Democratic Republic of";
 replace scode=490 if sname=="Congo (DRC)";
+replace scode=490 if sname=="Congo (Democratic Republic of the)";
+
+
 
 
 
@@ -298,6 +304,7 @@ replace scode=501 if sname=="Kenya";
 replace scode=510 if sname=="Tanzania";
 **Babak added
 replace scode=510 if sname=="U.R. of Tanzania: Mainland";
+replace scode=510 if sname=="Tanzania (United Republic of)";
 
 replace scode=511 if sname=="Zanzibar";
 replace scode=516 if sname=="Burundi";
