@@ -330,6 +330,7 @@ replace scode=571 if sname=="Botswana";
 replace scode=572 if sname=="Swaziland";
 **Babak added
 replace scode=572 if sname=="Eswatini";
+replace scode=572 if sname=="Eswatini (Kingdom of)";
 
 replace scode=580 if sname=="Madagascar";
 **Babak added
