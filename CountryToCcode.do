@@ -436,6 +436,8 @@ replace scode=732 if sname=="Republic of Korea";
 replace scode=732 if sname=="Korea, Rep.";
 *Babak added
 replace scode=732 if sname=="Korea Rep.";
+replace scode=732 if sname=="Korea (Republic of)";
+
 replace scode=740 if sname=="Japan";
 replace scode=750 if sname=="India";
 replace scode=760 if sname=="Bhutan";
@@ -497,6 +499,9 @@ replace scode=987 if sname=="Federated States of Micronesia";
 replace scode=987 if sname=="Micronesia, Fed. Sts.";
 ** Babak added
 replace scode=987 if sname=="Micronesia, Federated States of";
+replace scode=987 if sname=="Micronesia (Federated States of)";
+
+
 
 replace scode=990 if sname=="Samoa";
 
