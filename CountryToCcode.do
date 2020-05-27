@@ -240,6 +240,7 @@ replace scode=437 if sname=="Ivory Coast";
 replace scode=437 if sname=="Côte d'Ivoire";
 replace scode=437 if sname=="Cote d'Ivoire";
 replace scode=437 if sname=="Cote d`Ivoire";
+replace scode=437 if sname=="CÃ´te d'Ivoire";
 *Babak added 
 replace scode=437 if sname=="Cote Divoire";
 replace scode=438 if sname=="Guinea";
@@ -332,8 +333,12 @@ replace scode=581 if sname=="Fr Ind O";
 replace scode=590 if sname=="Mauritius";
 replace scode=591 if sname=="Seychelles";
 replace scode=600 if sname=="Morocco";
+replace scode=600 if sname=="Marocco";
+
 replace scode=615 if sname=="Algeria";
 replace scode=616 if sname=="Tunisia";
+replace scode=616 if sname=="Tunesia";
+
 replace scode=620 if sname=="Libya";
 replace scode=625 if sname=="Sudan";
 **Babak added from pwt90
