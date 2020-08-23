@@ -24,6 +24,8 @@ gen scode=.
 replace scode=  2 if sname=="United States of America";
 replace scode=  2 if sname=="United States";
 replace scode=  2 if sname=="USA";
+replace scode=  2 if sname=="United States of America (the)";
+
 replace scode= 20 if sname=="Canada";
 replace scode= 31 if sname=="Bahamas";
 replace scode= 31 if sname=="Bahamas, The";
@@ -438,6 +440,8 @@ replace scode=732 if sname=="Korea, Rep.";
 *Babak added
 replace scode=732 if sname=="Korea Rep.";
 replace scode=732 if sname=="Korea (Republic of)";
+replace scode=732 if sname=="Korea (the Republic of)";
+
 
 replace scode=740 if sname=="Japan";
 replace scode=750 if sname=="India";
