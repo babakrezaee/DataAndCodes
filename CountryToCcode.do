@@ -263,6 +263,7 @@ replace scode=482 if sname=="Central African Rep";
 *Babak added
 replace scode=482 if sname=="Cent.Afr.Rep";
 replace scode=482 if sname=="Cent. Af. Rep.";
+replace scode=482 if sname=="Central_African_Republic";
 
 replace scode=483 if sname=="Chad";
 replace scode=484 if sname=="Congo";
@@ -325,6 +326,7 @@ replace scode=553 if sname=="Malawi";
 replace scode=560 if sname=="South Africa";
 
 replace scode=560 if sname=="S. Africa";
+replace scode=560 if sname=="South_Africa";
 
 replace scode=565 if sname=="Namibia";
 replace scode=570 if sname=="Lesotho";
