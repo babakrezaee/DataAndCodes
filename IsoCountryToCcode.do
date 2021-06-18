@@ -71,7 +71,7 @@ replace scode=230 if siso=="ESP";
 replace scode=232 if siso=="AND";
 replace scode=235 if siso=="PRT";
 *replace scode=255 if siso=="DEU";
-replace scode=260 if siso=="";
+replace scode=260 if siso=="DEU";
 *replace scode=265 if siso=="";
 replace scode=290 if siso=="POL";
 replace scode=305 if siso=="AUT";
