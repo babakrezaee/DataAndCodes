@@ -87,6 +87,9 @@ replace scode=343 if siso=="MKD";
 replace scode=344 if siso=="HRV";
 replace scode=345 if siso=="YUG";
 replace scode=346 if siso=="BIH";
+
+replace scode=347 if siso=="RKS";
+
 replace scode=349 if siso=="SVN";
 replace scode=350 if siso=="GRC";
 replace scode=352 if siso=="CYP";
@@ -163,6 +166,9 @@ replace scode=615 if siso=="DZA";
 replace scode=616 if siso=="TUN";
 replace scode=620 if siso=="LBY";
 replace scode=625 if siso=="SDN";
+
+replace scode=626 if siso=="SSD";
+
 replace scode=630 if siso=="IRN";
 replace scode=640 if siso=="TUR";
 replace scode=645 if siso=="IRQ";
