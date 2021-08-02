@@ -86,6 +86,9 @@ replace scode=339 if siso=="ALB";
 replace scode=343 if siso=="MKD";
 replace scode=344 if siso=="HRV";
 replace scode=345 if siso=="YUG";
+
+replace scode=345 if siso=="SRB";
+
 replace scode=346 if siso=="BIH";
 
 replace scode=347 if siso=="RKS";
