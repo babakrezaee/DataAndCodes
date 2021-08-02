@@ -140,6 +140,9 @@ replace scode=343 if sname=="TFYR of Macedonia";
 replace scode=343 if sname=="Macedonia, FYR";
 replace scode=343 if sname=="North Macedonia, Republic of";
 replace scode=343 if sname=="the former Yugoslav Republic of Macedonia";
+replace scode=343 if sname=="North Macedonia";
+
+
 
 
 replace scode=344 if sname=="Croatia";
