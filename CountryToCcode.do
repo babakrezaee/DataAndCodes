@@ -384,10 +384,10 @@ replace scode=666 if sname=="Israel";
 replace scode=666 if sname=="Occupied Palestinian Territory";
 
 replace scode=670 if sname=="Saudi Arabia";
-**Babak (I code Yemen 678 for all years as Gleditsch did in his coding of GDP, trade, ect  )
+
 replace scode=678 if sname=="Yemen Arab Republic";
-replace scode=678 if sname=="Yemen";
-replace scode=678 if sname=="Yemen, Rep.";
+replace scode=679 if sname=="Yemen";
+replace scode=679 if sname=="Yemen, Rep.";
 replace scode=678 if sname=="Yemen, Republic of";
 replace scode=678 if sname=="Yemen People's Republic";
 replace scode=678 if sname=="Yemen (PDR)";
